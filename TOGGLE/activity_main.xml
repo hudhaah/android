@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true">
+
+        <!-- First Image -->
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/car1"
+            android:visibility="visible" />
+
+        <!-- Second Image -->
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/car2"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!-- Toggle Button -->
+    <Button
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Image"
+        android:layout_below="@id/frameLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>
